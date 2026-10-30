@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn1{
+            background-color: green;
+            height: 50px;
+            width: 150px;
+        }
+         .btn2{
+            background-color: rgb(229, 255, 0);
+            height: 50px;
+            width: 150px;
+        }
+         .btn3{
+            background-color: rgb(255, 0, 230);
+            height: 50px;
+            width: 150px;
+        }
+
+
+
+        #post-container{
+            max-width: 1160px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat( 3, 1fr);
+            grid-gap: 20px;
+            row-gap: 30px;
+          
+        }
+
+        .post-card{
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px 1px gray;
+            height: 100%;
+            
+            
+
+
+        }
+
+        .post-card h2{
+            text-align: center;
+        }
+       
+        .post-card p{
+          text-align: justify;  
+        }
+    </style>
+</head>
+<body>
+    
+    <button class="btn1" onclick="loadPost()">Load Post</button>
+    
+    <button class="btn3" onclick="showPost()">Show Post</button>
+
+    <!-- Container for Data -->
+    <div id="post-container">
+        
+    </div>
+
+    <!-- <script src="../28_4-Recap_Fetch-Send_and_Console_Each_Data/script.js"></script> -->
+    <script src="./posts6.js"></script>
+</body>
+</html>
